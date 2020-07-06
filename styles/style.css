@@ -9,6 +9,10 @@
 
 :root {
   --primary-color: #57619c;
+  --error-background: #fc8888;
+  --error-color: maroon;
+  --success-background: rgb(154, 243, 113);
+  --success-color: #0a532aff;
 }
 
 body {
@@ -31,6 +35,16 @@ body {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.main-log {
+  display: none;
+  background-color: var(--success-background);
+  color: var(--success-color);
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .login-form,
@@ -65,9 +79,9 @@ body {
 }
 
 .error {
-  color: maroon;
+  color: var(--error-color);
   font-weight: bold;
-  background-color: #ff4444;
+  background-color: var(--error-background);
   margin-top: 10px;
   padding: 3px;
   display: none;
@@ -105,6 +119,7 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  outline: none;
 }
 
 /*Dashboard*/
@@ -128,7 +143,6 @@ button {
 }
 
 #signout {
-  outline: none;
   width: 100%;
 }
 

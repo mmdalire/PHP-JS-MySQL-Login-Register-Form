@@ -36,7 +36,10 @@
           <h2 class="title">Create an account</h2>
           <i class="fas fa-user-plus" id="user-logo"></i>
         </div>
-        <form>
+        <form method="POST">
+          <div class="control-group">
+            <div class="main-log"></div>
+          </div>
           <div class="control-group">
             <label for="register_username">Enter username</label>
             <input
