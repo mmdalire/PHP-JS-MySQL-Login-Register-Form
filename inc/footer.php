@@ -8,7 +8,7 @@
         </div>
         <div class="footer-content">
           <h3>Date started: July 5, 2020</h3>
-          <h3>Date ended: -</h3>
+          <h3>Date ended: July 7, 2020</h3>
         </div>
       </div>
     </footer>
