@@ -1,4 +1,7 @@
-<?php include "inc/header.php";?>
+<?php 
+  session_start();
+  include "inc/header.php";
+?>
 <body>
   <div class="container">
     <div class="main-form">
@@ -7,7 +10,23 @@
           <h2 class="title">Login</h2>
           <i class="fas fa-key" id="user-logo"></i>
         </div>
-        <form>
+        <form method="POST" action="http://localhost:8080/PHP/Mini%20projects/PHP%20Login%20and%20Registration%20Form/processLogin.php">
+          <?php
+            if(isset($_SESSION["message"])) { ?>
+              <div class="control-group">
+                  <div class="main-login-log" style="display: block; background-color: var(--error-background); color: var(--error-color);"><?php echo $_SESSION["message"];?></div>
+              </div>    
+            <?php }
+
+            else { ?>
+              <div class="control-group">
+                  <div class="main-login-log" style="display: none;"></div>
+              </div>    
+            <?php }
+            session_destroy();
+            session_abort(); 
+            ?>
+
           <div class="control-group">
             <label for="login-username">Username or Email</label>
             <input

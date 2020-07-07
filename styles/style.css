@@ -37,7 +37,8 @@ body {
   justify-content: space-between;
 }
 
-.main-log {
+.main-log,
+.main-login-log {
   display: none;
   background-color: var(--success-background);
   color: var(--success-color);
@@ -161,6 +162,12 @@ footer {
 }
 
 #js-logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+#mysql-logo {
   width: 100px;
   height: 100px;
   margin: 10px;

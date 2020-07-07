@@ -1,6 +1,7 @@
 <footer>
       <img src="./images/php-logo.png" id="php-logo" alt="PHP logo" />
       <img src="./images/js-logo.png" id="js-logo" alt="JS logo" />
+      <img src="./images/mysql-logo.png" id="mysql-logo" alt="MySQL logo">
       <div>
         <div class="footer-header">
           <h1>PHP Login and Registration Form</h1>
